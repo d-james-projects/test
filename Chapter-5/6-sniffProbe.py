@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 from scapy.all import *
 
-interface = 'mon0'
+interface = 'wlan0mon'
 probeReqs = []
 
 
@@ -11,7 +11,7 @@ def sniffProbe(p):
         netName = p.getlayer(Dot11ProbeReq).info
         if netName not in probeReqs:
             probeReqs.append(netName)
-            print '[+] Detected New Probe Request: ' + netName
+            print ('[+] Detected New Probe Request: ' , netName.decode('utf-8'))
 
 
 sniff(iface=interface, prn=sniffProbe)

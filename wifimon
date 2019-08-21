@@ -1,0 +1,13 @@
+sudo airmon-ng start wlx801f028f2669
+sudo ifconfig wlan0mon up
+iwconfig
+sudo python3 6-sniffHidden.py 
+sudo python3 6-sniffProbe.py 
+
+
+git checkout -b mynewbranch
+git status
+git log
+git push origin mynewbranch
+git branch -u origin/mynewbranch
+(or git push -u origin mynewbranch)
