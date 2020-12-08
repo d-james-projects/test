@@ -4,6 +4,13 @@ pipeline {
   
   stages {
 
+    stage('Start') {
+      steps {
+        script {
+          echo 'lets get started here ...'
+        }
+      }
+    }
     stage('Test') {
       steps {
         script {
