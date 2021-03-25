@@ -9,6 +9,7 @@ def call(def theThingPassed = "") {
         echo theThingPassed
 	def msg = "result = " + funcInLibrary().toString()
 	echo msg
+	echo funcInLibrary.toString()
 }
 
 def funcInLibrary() {
