@@ -12,6 +12,10 @@ pipeline {
         script {
           echo 'lets get started here ...'
         }
+	def externalMethod = load('localFunc.groovy')
+	def x = externalMethod.methodA()
+	echo x.toString()
+	externalMethod.methodB("say something there")
       }
     }
     stage('Test') {
