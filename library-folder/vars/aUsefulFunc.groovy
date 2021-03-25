@@ -7,7 +7,7 @@ def funcInLibrary() {
 def call(def theThingPassed = "") {
 	echo "This function is called aUsefulFunc"
         echo theThingPassed
-	def msg = "result = " + String(funcInLibrary())
+	def msg = "result = " + funcInLibrary().toString()
 	echo msg
 }
 
