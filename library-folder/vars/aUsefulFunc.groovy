@@ -1,8 +1,8 @@
 #!groovy
 
-def funcInLibrary() {
+/*def funcInLibrary() {
 	return 42
-}
+}*/
 
 def call(def theThingPassed = "") {
 	echo "This function is called aUsefulFunc"
@@ -11,6 +11,6 @@ def call(def theThingPassed = "") {
 	echo msg
 }
 
-/*def funcInLibrary() {
+def funcInLibrary() {
 	return 42
-}*/
+}
